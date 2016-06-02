@@ -1,6 +1,7 @@
 package projecteuler
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -18,4 +19,5 @@ func TestSumFib(t *testing.T) {
 			t.Errorf("SumFir(%d): expected %d, actual %d", td.intput, td.expected, actual)
 		}
 	}
+	fmt.Printf("2: SumFub(4000000) = %d\n", SumFib(4000000))
 }
